@@ -1,0 +1,23 @@
+.landing-buttons {
+	display: flex;
+	flex-direction: column;
+	width: 83vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.landing-buttons button {
+	background-color: lightpink;
+	font-family: "Montserrat", sans-serif;
+	width: 40vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15vh;
+	padding: 3vw;
+	border: none;
+	border-radius: 3%;
+}
+
+.landing-buttons button:hover {
+	cursor: pointer;
+}
