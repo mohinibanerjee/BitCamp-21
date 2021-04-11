@@ -21,4 +21,10 @@ from education import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home_action, name = 'home'),
+    path('login', views.login_action, name = 'login'),
+    path('register', views.register_action, name='register'),
+    path('match', views.match_action, name='match'),
+    path('viewmatches', views.viewmatches_action, name='viewmatches'),
+    path('cafe', views.cafe_action, name='cafe'),
+    path('chat', views.chat_action, name='chat'),
 ]

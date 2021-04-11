@@ -90,21 +90,31 @@ legend {
     align-items: center;
 }
 </style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Study Buddies</title>
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:600&display=swap" rel="stylesheet">
+</head>
 <body>
+
+
     <form class = "form" method="POST" >
             <fieldset>
-                <legend> Study Buddies </legend>
+                <legend> Create New Account </legend>
                 <table class = "login_register_table">
                     {{form}}
                 </table>
-                <button id = "id_submit_button" type="submit" href="{% url 'login' %}" value="submit">Login</button>
+                <button id = "id_submit_button" type="submit" href="{% url 'register' %}" value="submit">Register</button>
             </fieldset>
+
 
             {% csrf_token %}
     </form>
 
-    <div class = "annotation">
-        Not a user?
-        <a href = "{% url 'register'%}">Register</a>
-    </div>
 </body>
+</html>
