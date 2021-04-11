@@ -1,0 +1,39 @@
+.matches-body {
+	width: 85vw;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10vh;
+	margin-bottom: 20vh;
+}
+
+.matches-body h3 {
+	font-size: 35px;
+	margin-bottom: 12vh;
+}
+
+.matches-ind {
+	box-shadow: 4px 4px 4px lightgray;
+	width: 50vw;
+	height: 23vh;
+	margin-bottom: 5vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.matches-ind img {
+	height: inherit;
+	width: 150px;
+}
+
+.matches-ind .name {
+	padding-top: 20px;
+}
+.matches-ind .distance {
+/*	align-self: flex-end;*/
+	padding-right: 5vw;
+	padding-top: 20px;
+}
