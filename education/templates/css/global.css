@@ -1,0 +1,17 @@
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+.icon {
+	position: fixed;
+/*	opacity: 0;*/
+	border-radius: 50%;
+	top: 28px;
+	left: 4.5vw;
+	width: 30px;
+	height: 30px;
+	z-index: 9998;
+	padding: 15px;
+	background-color: lightgray;
+	transition: all .2s;
+}
