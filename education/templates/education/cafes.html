@@ -1,0 +1,118 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Prime Time</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'primetime/login.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani:600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    </body>
+</html> -->
+<style>
+    body {
+	font-family: "Montserrat", sans-serif;
+}
+h1 {
+	margin-top: 13vh;
+	text-align: center;
+}
+.icon {
+	position: fixed;
+/*	opacity: 0;*/
+	border-radius: 50%;
+	top: 28px;
+	left: 4.5vw;
+	width: 30px;
+	height: 30px;
+	z-index: 9998;
+	padding: 15px;
+	background-color: lightgray;
+	transition: all .2s;
+}
+.cafes-body {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.cafes-body span {
+	padding: 3vw;
+}
+
+.cafes-ind {
+	width: 40vw;
+	height: 40vw;
+	margin-bottom: 50px;
+	overflow: hidden;
+	text-align: center;
+    display: flex;
+	flex-direction: column;
+}
+
+.cafes-ind:hover {
+	cursor: pointer;
+	opacity: .8;
+}
+
+.cafes-ind span {
+	background-color: lightpink;
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+}
+</style>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Meet Your Next Study Date</title>
+		<link href="/css/global.css" rel="stylesheet" type="text/css"/>
+		<link type="text/css" rel="stylesheet" href="/css/cafes.css"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div class="icon"></div>
+
+		<h1>Pick a Virtual Cafe</h1>
+		<div class="cafes-body">
+			<div class="cafes-ind">
+				<span></span>
+				<h4>Reaco Coffee Shop</h4>
+				<h5>Playing: Lo-Fi Beats</h5>
+			</div>
+
+			<span></span>
+
+			<div class="cafes-ind">
+				<span></span>
+				<h4>Reaco Coffee Shop</h4>
+				<h5>Playing: Lo-Fi Beats</h5>
+			</div>
+
+<!--			<span></span>-->
+
+			<div class="cafes-ind">
+				<span></span>
+				<h4>Reaco Coffee Shop</h4>
+				<h5>Playing: Lo-Fi Beats</h5>
+			</div>
+
+			<span></span>
+
+			<div class="cafes-ind">
+				<span></span>
+				<h4>Reaco Coffee Shop</h4>
+				<h5>Playing: Lo-Fi Beats</h5>
+			</div>
+		</div>
+	</body>
+
+</html>

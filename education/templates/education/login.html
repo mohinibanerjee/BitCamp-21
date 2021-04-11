@@ -1,0 +1,110 @@
+<style>
+    .login_register_table th{
+    width: 170px;
+    text-align: right;
+}
+
+.login_register_table{
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.annotation{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+body {
+    background-color: white;
+    margin: 0 0 0 0;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.form {
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.login_register_table label{
+    text-align: right;
+    color: #008b8b;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-shadow: 1px 1px 1px #fff
+}
+
+.login_register_table input{
+    width: 90%;
+    height: 25px;
+    font-size: 20px;
+    text-align: left;
+    font-family: "Times New Roman", sans-serif;
+    color: black;
+}
+
+fieldset {
+    width: 500px;
+    border:2px solid #008b8b;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 50px 50px;
+    align-items: center;
+}
+
+legend {
+    padding: 5px 30px;
+    border: 2px solid #008b8b;
+    border-radius: 20px;
+    color:#008b8b;
+    font-size: 30px;
+    text-align: center;
+    background: #E1F7F5;
+}
+
+#id_submit_button {
+    background-color: #E1F7F5;
+    border: 2px solid #008b8b;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top:20px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    align-items: center;
+}
+</style>
+<body>
+    <form class = "form" method="POST" >
+            <fieldset>
+                <legend> Study Buddies </legend>
+                <table class = "login_register_table">
+                    {{form}}
+                </table>
+                <button id = "id_submit_button" type="submit" href="{% url 'login' %}" value="submit">Login</button>
+            </fieldset>
+
+            {% csrf_token %}
+    </form>
+
+    <div class = "annotation">
+        Not a user?
+        <a href = "{% url 'register'%}">Register</a>
+    </div>
+</body>

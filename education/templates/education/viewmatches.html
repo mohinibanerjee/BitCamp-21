@@ -1,0 +1,84 @@
+<style>
+.matches-body {
+	width: 85vw;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10vh;
+	margin-bottom: 20vh;
+}
+
+.matches-body h3 {
+	font-size: 35px;
+	margin-bottom: 12vh;
+}
+
+.matches-ind {
+	box-shadow: 4px 4px 4px lightgray;
+	width: 50vw;
+	height: 23vh;
+	margin-bottom: 5vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.matches-ind img {
+	height: inherit;
+	width: 150px;
+}
+
+.matches-ind .name {
+	padding-top: 20px;
+}
+.matches-ind .distance {
+/*	align-self: flex-end;*/
+	padding-right: 5vw;
+	padding-top: 20px;
+}
+</style>
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Meet Your Next Study Date</title>
+		<link href="/css/global.css" rel="stylesheet" type="text/css"/>
+		<link href="/css/matches.css" rel="stylesheet" type="text/css"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<div class="icon" href="main.html"></div>
+			<a class="matches" href="matches.html"></a>
+			<a class="chat" href="chat.html"></a>
+			<a class="profile" href="profile.html"></a>
+		</header>
+
+		<div class="matches-body">
+			<h3>Meet your matches!</h3>
+			<div class="matches-ind">
+				<img src="/img/tina.jpeg" alt="tina">
+				<div class="name">Tina Ansari</div>
+				<div class="distance">2 mi</div>
+			</div>
+
+			<div class="matches-ind">
+				<img src="/img/priscilla.jpeg" alt="priscilla">
+				<div class="name">Priscilla Kim</div>
+				<div class="distance">10 mi</div>
+			</div>
+
+			<div class="matches-ind">
+				<img src="/img/srnah.jpeg" alt="serena">
+				<div class="name">Serena Huang</div>
+				<div class="distance">12 mi</div>
+			</div>
+		</div>
+
+	</body>
+</html>
